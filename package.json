@@ -5,6 +5,8 @@
   "keywords": [
     "emotion.js",
     "emotion",
+    "styled-component",
+    "css-in-js",
     "include-media"
   ],
   "main": "cssinjs-inlclude-media.js",

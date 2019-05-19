@@ -15,12 +15,36 @@ largeDesktop: 1440
 
 ### example
 
-with css-in-js library (ex: emotion.js)
+with css-in-js library (ex: emotion.js , styled-component)
+
+- example with `emotion.js`
 
 ```javascript
 import media from "includeMedia";
 
 export const exampleClass = css`
+  color: red;
+  ${media(">desktop")} {
+    font-size: 15px;
+  }
+  ${media("<=desktop", ">tablet")} {
+    font-size: 20px;
+  }
+  ${media("<=tablet", ">phone")} {
+    font-size: 25px;
+  }
+  ${media("<=phone")} {
+    font-size: 30px;
+  }
+`;
+```
+
+- example with `styled-component`
+
+```javascript
+import media from "includeMedia";
+
+const exampleClass = styled.h1`
   color: red;
   ${media(">desktop")} {
     font-size: 15px;
