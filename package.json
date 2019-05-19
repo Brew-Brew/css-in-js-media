@@ -6,6 +6,7 @@
     "emotion.js",
     "emotion",
     "styled-component",
+    "styled-components",
     "css-in-js",
     "include-media"
   ],
