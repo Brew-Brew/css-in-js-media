@@ -1,6 +1,6 @@
-## emotion-include-media
+## css-in-js-media
 
-you can easily deal with responsive design with this `css-in-js-media`
+when you style with css-in-js (emotion, styled-component) you can easily deal with responsive design with this `css-in-js-media`
 
 #### break-point
 
