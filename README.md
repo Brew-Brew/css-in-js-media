@@ -15,7 +15,7 @@ import media from "css-in-js-media";
 
 #### size
 
-![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png">)
+![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png)
 
 #### media-query break-point
 
