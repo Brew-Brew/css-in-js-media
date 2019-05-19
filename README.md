@@ -69,3 +69,16 @@ const exampleClass = styled.h1`
   }
 `;
 ```
+
+### THANKS
+
+https://github.com/koansang
+https://github.com/yongdamsh
+
+### :bug: Bug reporting
+
+[Issue](https://github.com/zx6658/css-in-js-media/issues)
+
+### License
+
+[MIT](./LICENSE)
