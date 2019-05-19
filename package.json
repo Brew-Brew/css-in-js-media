@@ -1,0 +1,11 @@
+{
+  "name": "emotion-include-media",
+  "version": "1.0.0",
+  "description": "emotion.js-include-media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
