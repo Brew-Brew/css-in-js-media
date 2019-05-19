@@ -20,7 +20,7 @@ with css-in-js library (ex: emotion.js , styled-component)
 - example with `emotion.js`
 
 ```javascript
-import media from "includeMedia";
+import media from "css-in-js-media@1.0.0";
 
 export const exampleClass = css`
   color: red;
@@ -42,7 +42,7 @@ export const exampleClass = css`
 - example with `styled-component`
 
 ```javascript
-import media from "includeMedia";
+import media from "css-in-js-media@1.0.0";
 
 const exampleClass = styled.h1`
   color: red;
