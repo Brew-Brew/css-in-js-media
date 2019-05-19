@@ -1,4 +1,4 @@
-## css-in-js-media
+# css-in-js-media :art:
 
 when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/)
 
