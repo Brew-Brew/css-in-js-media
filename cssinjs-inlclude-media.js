@@ -12,7 +12,7 @@ function throwError() {
   throw "invalid media-query  :(";
 }
 
-function includeMedia() {
+function cssinjsMedia() {
   const validatedQuery = Array.from(arguments).filter(checkValid);
   const isValid = Array.from(arguments).length === validatedQuery.length;
 
@@ -45,4 +45,4 @@ function convertToQuery(param) {
   return `(${widthCondition}: ${size}px)`;
 }
 
-export default includeMedia;
+export default cssinjsMedia;
