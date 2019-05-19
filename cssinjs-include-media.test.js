@@ -1,4 +1,4 @@
-import includeMedia from "./includeMedia";
+import includeMedia from "./cssinjs-inlclude-media.js";
 
 describe("if param num is one", () => {
   test("check <phone", () => {

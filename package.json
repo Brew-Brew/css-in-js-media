@@ -1,7 +1,7 @@
 {
   "name": "css-in-js-media",
   "version": "1.0.0",
-  "description": "css-in-js-media",
+  "description": "easy code with css-in-js with mediaquery via css-in-js-media",
   "keywords": [
     "emotion.js",
     "emotion",
@@ -11,9 +11,10 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "ideveloper2 <zx6658@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^24.8.0"
   }
 }
