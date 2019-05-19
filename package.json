@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/zx6658/css-in-js-media.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^24.8.0"
