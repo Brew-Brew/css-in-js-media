@@ -2,6 +2,13 @@
 
 when you style with css-in-js (emotion, styled-component) you can easily deal with responsive design with this `css-in-js-media`
 
+### how-to-use
+
+```
+npm install css-in-js-media
+import media from "css-in-js-media";
+```
+
 #### break-point
 
 ```
@@ -20,7 +27,7 @@ with css-in-js library (ex: emotion.js , styled-component)
 - example with `emotion.js`
 
 ```javascript
-import media from "css-in-js-media@1.0.0";
+import media from "css-in-js-media";
 
 export const exampleClass = css`
   color: red;
@@ -42,7 +49,7 @@ export const exampleClass = css`
 - example with `styled-component`
 
 ```javascript
-import media from "css-in-js-media@1.0.0";
+import media from "css-in-js-media";
 
 const exampleClass = styled.h1`
   color: red;
