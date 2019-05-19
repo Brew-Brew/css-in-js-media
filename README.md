@@ -2,7 +2,7 @@
 
 when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/)
 
-### how-to-use
+### :question: how-to-use
 
 ```
 npm install css-in-js-media
@@ -11,7 +11,7 @@ import media from "css-in-js-media";
 
 - example in `code-sandbox-link` : https://codesandbox.io/embed/k28q2nv2w7
 
-#### break-point
+#### media-query break-point
 
 ```
 smallPhone: 320
@@ -22,7 +22,7 @@ largeDesktop: 1440
 
 ```
 
-### example
+### :pencil: example
 
 with css-in-js library (ex: emotion.js , styled-component)
 
@@ -70,10 +70,10 @@ const exampleClass = styled.h1`
 `;
 ```
 
-### THANKS
+### :heart: THANKS
 
-https://github.com/koansang
-https://github.com/yongdamsh
+- https://github.com/koansang
+- https://github.com/yongdamsh
 
 ### :bug: Bug reporting
 
