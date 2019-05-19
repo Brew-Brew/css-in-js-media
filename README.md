@@ -13,9 +13,11 @@ import media from "css-in-js-media";
 
 - example in `code-sandbox-link` : https://codesandbox.io/embed/k28q2nv2w7
 
-#### size
+### :school_satchel: size
 
 ![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png)
+
+### :pencil: example
 
 #### media-query break-point
 
@@ -27,8 +29,6 @@ desktop: 1024
 largeDesktop: 1440
 
 ```
-
-### :pencil: example
 
 with css-in-js library (ex: emotion.js , styled-component)
 
