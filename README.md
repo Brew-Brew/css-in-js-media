@@ -1,5 +1,7 @@
 # css-in-js-media :art:
 
+**Minified and Simplified include-media with CSS-in-JS**
+
 when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/)
 
 ### :question: how-to-use
@@ -10,6 +12,10 @@ import media from "css-in-js-media";
 ```
 
 - example in `code-sandbox-link` : https://codesandbox.io/embed/k28q2nv2w7
+
+#### size
+
+![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png">)
 
 #### media-query break-point
 
