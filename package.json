@@ -14,6 +14,10 @@
     "test": "jest"
   },
   "author": "ideveloper2 <zx6658@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zx6658/css-in-js-media.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",

@@ -1,6 +1,6 @@
 ## css-in-js-media
 
-when you style with css-in-js (emotion, styled-component) you can easily deal with responsive design with this `css-in-js-media` which is similar with ![include-media](https://include-media.com/)
+when you style with css-in-js (emotion, styled-component) you can easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/)
 
 ### how-to-use
 
