@@ -5,5 +5,5 @@
 
 declare module 'css-in-js-media' {
   function cssInJsMedia(firstQuery?: string, secondQuery?: string): string;
-  export = cssInJsMedia;
+  export default cssInJsMedia;
 }
