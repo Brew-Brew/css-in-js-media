@@ -1,4 +1,4 @@
-const breakpoints = {
+let breakpoints = {
   smallPhone: 320,
   phone: 375,
   tablet: 768,
@@ -10,6 +10,13 @@ const signRegex = /^[<=>]+/;
 
 function throwError() {
   throw "invalid media-query  :(";
+}
+
+export function setBreakPoints(customizedPoints) {
+  breakpoints = {
+    ...breakpoints,
+    ...customizedPoints
+  };
 }
 
 function cssinjsMedia() {

@@ -1,4 +1,4 @@
-import includeMedia from "./cssinjs-inlclude-media.js";
+import includeMedia, { setBreakPoints } from "./cssinjs-inlclude-media.js";
 
 describe("if param num is one", () => {
   test("check <phone", () => {
@@ -41,5 +41,12 @@ describe("if param is invalid", () => {
     expect(() => includeMedia("<=myphone", "5000")).toThrowError(
       new Error("invalid media-query  :(")
     );
+  });
+});
+
+describe("check if breakpoint is changed", () => {
+  test("test for breakpoint change", () => {
+    setBreakPoints({ largeDesktop: 1500 });
+    expect(includeMedia("<=largeDesktop")).toBe("@media (max-width: 1500px)");
   });
 });
