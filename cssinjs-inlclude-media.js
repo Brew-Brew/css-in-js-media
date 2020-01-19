@@ -12,10 +12,29 @@ function throwError() {
   throw "invalid media-query  :(";
 }
 
-export function setBreakPoints(customizedPoints) {
+function throwBreakPointError() {
+  throw "invalid breakpoint :(";
+}
+
+export function getBreakPoints() {
+  return breakpoints;
+}
+
+function checkValidBreakpoint(customizedBreakPoints) {
+  const keysOfOrigin = Object.keys(breakpoints);
+  const keysOfCustomized = Object.keys(customizedBreakPoints);
+  return keysOfCustomized.every(key => keysOfOrigin.includes(key));
+}
+
+export function setBreakPoints(customizedBreakPoints) {
+  const isValidBreakPoints = checkValidBreakpoint(customizedBreakPoints);
+  if (!isValidBreakPoints) {
+    return throwBreakPointError();
+  }
+
   breakpoints = {
     ...breakpoints,
-    ...customizedPoints
+    ...customizedBreakPoints
   };
 }
 
