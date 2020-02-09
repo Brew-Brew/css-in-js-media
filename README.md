@@ -42,11 +42,6 @@ getBreakPoints();
 // }
 ```
 
-```javascript
-import { setBreakPoints } from "./cssinjs-inlclude-media.js";
-setBreakPoints({ largeDesktop: 1200 });
-```
-
 ### :school_satchel: size
 
 ![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png)
