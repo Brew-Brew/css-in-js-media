@@ -1,4 +1,4 @@
-const breakpoints = {
+let breakpoints = {
   smallPhone: 320,
   phone: 375,
   tablet: 768,
@@ -10,6 +10,32 @@ const signRegex = /^[<=>]+/;
 
 function throwError() {
   throw "invalid media-query  :(";
+}
+
+function throwBreakPointError() {
+  throw "invalid breakpoint :(";
+}
+
+export function getBreakPoints() {
+  return breakpoints;
+}
+
+function checkValidBreakpoint(customizedBreakPoints) {
+  const keysOfOrigin = Object.keys(breakpoints);
+  const keysOfCustomized = Object.keys(customizedBreakPoints);
+  return keysOfCustomized.every(key => keysOfOrigin.includes(key));
+}
+
+export function setBreakPoints(customizedBreakPoints) {
+  const isValidBreakPoints = checkValidBreakpoint(customizedBreakPoints);
+  if (!isValidBreakPoints) {
+    return throwBreakPointError();
+  }
+
+  breakpoints = {
+    ...breakpoints,
+    ...customizedBreakPoints
+  };
 }
 
 function cssinjsMedia() {

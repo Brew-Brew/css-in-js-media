@@ -1,4 +1,7 @@
-import includeMedia from "./cssinjs-inlclude-media.js";
+import includeMedia, {
+  setBreakPoints,
+  getBreakPoints
+} from "./cssinjs-inlclude-media.js";
 
 describe("if param num is one", () => {
   test("check <phone", () => {
@@ -7,6 +10,18 @@ describe("if param num is one", () => {
 
   test("check >=tablet", () => {
     expect(includeMedia(">=tablet")).toBe("@media (min-width: 768px)");
+  });
+});
+
+describe("get Breakpoints", () => {
+  test("get breakpoints of library", () => {
+    expect(getBreakPoints()).toEqual({
+      smallPhone: 320,
+      phone: 375,
+      tablet: 768,
+      desktop: 1024,
+      largeDesktop: 1440
+    });
   });
 });
 
@@ -40,6 +55,18 @@ describe("if param is invalid", () => {
   test("check two param is not valid ", () => {
     expect(() => includeMedia("<=myphone", "5000")).toThrowError(
       new Error("invalid media-query  :(")
+    );
+  });
+});
+
+describe("check if breakpoint is changed", () => {
+  test("test for breakpoint change", () => {
+    setBreakPoints({ largeDesktop: 1500 });
+    expect(includeMedia("<=largeDesktop")).toBe("@media (max-width: 1500px)");
+  });
+  test("test for invalid breakpoint change", () => {
+    expect(() => setBreakPoints({ smallDesktop: 1500 })).toThrowError(
+      new Error("invalid breakpoint :(")
     );
   });
 });
