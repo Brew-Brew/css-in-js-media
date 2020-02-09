@@ -6,6 +6,8 @@ when you style with css-in-js (emotion, styled-component) you can perfectly and 
 
 ### :question: how-to-use
 
+#### install & default usage
+
 ```
 npm install css-in-js-media
 import media from "css-in-js-media";
@@ -15,9 +17,24 @@ import media from "css-in-js-media";
 
 #### set flexible breakpoints
 
+#### get flexible breakpoints
+
+```javascript
+import { getBreakPoints } from "./cssinjs-inlclude-media.js";
+getBreakPoints();
+// default breakpoints
+// {
+//   smallPhone: 320;
+//   phone: 375;
+//   tablet: 768;
+//   desktop: 1024;
+//   largeDesktop: 1440;
+// }
+```
+
 ```javascript
 import { setBreakPoints } from "./cssinjs-inlclude-media.js";
-setBreakPoints({largeDesktop: 1200});
+setBreakPoints({ largeDesktop: 1200 });
 ```
 
 ### :school_satchel: size
@@ -26,7 +43,7 @@ setBreakPoints({largeDesktop: 1200});
 
 ### :pencil: example
 
-#### media-query break-point
+#### media-query break-point (default breakpoint)
 
 ```
 smallPhone: 320
