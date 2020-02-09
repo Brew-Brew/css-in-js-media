@@ -22,7 +22,7 @@ import { setBreakPoints } from "./cssinjs-inlclude-media.js";
 setBreakPoints({ desktop: 1440, largeDesktop: 1500 });
 ```
 
-#### get flexible breakpoints
+#### get breakpoints
 
 ```javascript
 import { getBreakPoints } from "./cssinjs-inlclude-media.js";
