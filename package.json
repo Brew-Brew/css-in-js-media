@@ -10,7 +10,6 @@
     "css-in-js",
     "include-media"
   ],
-  "types": "./types/index.d.ts",
   "main": "cssinjs-inlclude-media.js",
   "scripts": {
     "test": "jest"
