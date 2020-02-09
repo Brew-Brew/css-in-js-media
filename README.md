@@ -2,7 +2,12 @@
 
 **Minified and Simplified include-media with CSS-in-JS**
 
-when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/)
+when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/) and support type system(ts)
+
+**introduced at**
+
+- https://styled-components.com/ecosystem helpers section
+- https://github.com/emotion-js/emotion#ecosystem
 
 ### :question: how-to-use
 
