@@ -10,9 +10,10 @@
     "css-in-js",
     "include-media"
   ],
-  "main": "cssinjs-inlclude-media.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "author": "ideveloper2 <zx6658@gmail.com>",
   "repository": {
@@ -23,5 +24,9 @@
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "rollup": "^2.0.6",
+    "rollup-plugin-babel-minify": "^10.0.0"
   }
 }
