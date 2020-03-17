@@ -20,14 +20,14 @@ import media from "css-in-js-media";
 
 - example in `code-sandbox-link` : https://codesandbox.io/embed/k28q2nv2w7
 
-#### set flexible breakpoints
+#### set flexible breakpoints (optional)
 
 ```javascript
 import { setBreakPoints } from "css-in-js-media";
 setBreakPoints({ desktop: 1440, largeDesktop: 1500 });
 ```
 
-#### get breakpoints
+#### get breakpoints (optional)
 
 ```javascript
 import { getBreakPoints } from "css-in-js-media";
