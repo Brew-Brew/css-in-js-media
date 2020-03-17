@@ -23,14 +23,14 @@ import media from "css-in-js-media";
 #### set flexible breakpoints
 
 ```javascript
-import { setBreakPoints } from "./cssinjs-inlclude-media.js";
+import { setBreakPoints } from "css-in-js-media";
 setBreakPoints({ desktop: 1440, largeDesktop: 1500 });
 ```
 
 #### get breakpoints
 
 ```javascript
-import { getBreakPoints } from "./cssinjs-inlclude-media.js";
+import { getBreakPoints } from "css-in-js-media";
 getBreakPoints();
 // default breakpoints
 // {
