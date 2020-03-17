@@ -5,7 +5,8 @@ const config = {
   output: [
     {
       file: "dist/index.js",
-      format: "cjs"
+      format: "umd",
+      name: "css-in-js-media"
     }
   ],
   plugins: [minify()]
