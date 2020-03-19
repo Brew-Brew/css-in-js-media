@@ -4,6 +4,8 @@
 
 when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/) and support type system(ts)
 
+If you think this library is helpful, Support by give :star: 
+
 **introduced at**
 
 - https://styled-components.com/ecosystem helpers section
