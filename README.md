@@ -11,7 +11,9 @@ If you think this library is helpful, Support by give :star:
 - https://styled-components.com/ecosystem helpers section
 - https://github.com/emotion-js/emotion#ecosystem
 
-### install & default usage
+---
+
+### :rocket: install & default usage
 
 ```
 npm install css-in-js-media
@@ -31,10 +33,14 @@ largeDesktop: 1440
 
 ```
 
+---
+
 ### :school_satchel: size
 
 ![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png)
 
+
+---
 
 ### :question: how-to-use
 
@@ -105,6 +111,8 @@ getBreakPoints();
 //   largeDesktop: 1440;
 // }
 ```
+
+---
 
 ### :heart: THANKS
 
