@@ -1,16 +1,21 @@
 # css-in-js-media :art:
 
-
 **Minified and Simplified include-media with CSS-in-JS**
 
 when you style with css-in-js (emotion, styled-component) you can perfectly and easily deal with responsive design with this `css-in-js-media` which is similar with [include-media](https://include-media.com/) and support type system(ts)
 
-If you think this library is helpful, Support by give :star: 
+If you think this library is helpful, Support by give :star:
 
 **introduced at**
 
 - https://styled-components.com/ecosystem helpers section
 - https://github.com/emotion-js/emotion#ecosystem
+
+---
+
+### :book: documentation
+
+- https://css-in-js-media.netlify.app/#/
 
 ---
 
@@ -39,7 +44,6 @@ largeDesktop: 1440
 ### :school_satchel: size
 
 ![image](https://user-images.githubusercontent.com/26598542/57980351-92853600-7a65-11e9-8ce0-5e0f5acead4f.png)
-
 
 ---
 
