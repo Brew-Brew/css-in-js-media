@@ -3,7 +3,7 @@ let breakpoints = {
   phone: 375,
   tablet: 768,
   desktop: 1024,
-  largeDesktop: 1440
+  largeDesktop: 1440,
 };
 const signRegex = /^[<=>]+/;
 
@@ -22,11 +22,10 @@ function getBreakPoints() {
 function checkValidBreakpoint(customizedBreakPoints) {
   const keysOfOrigin = Object.keys(breakpoints);
   const keysOfCustomized = Object.keys(customizedBreakPoints);
-  return keysOfCustomized.every(key => keysOfOrigin.includes(key));
+  return keysOfCustomized.every((key) => keysOfOrigin.includes(key));
 }
 
 function setBreakPoints(customizedBreakPoints) {
-  console.log("dd");
   const isValidBreakPoints = checkValidBreakpoint(customizedBreakPoints);
 
   if (!isValidBreakPoints) {
