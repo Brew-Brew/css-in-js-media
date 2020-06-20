@@ -35,10 +35,12 @@ function setBreakPoints(customizedBreakPoints) {
   breakpoints = { ...breakpoints, ...customizedBreakPoints };
 }
 
-function cssinjsMedia(query, betweenQuery) {
+function cssinjsMedia(query, betweenQuery, unit) {
   const queries = betweenQuery ? [query, betweenQuery] : [query];
   return queries.every(checkValid)
-    ? `@media ${queries.map(convertToQuery).join(" and ")}`
+    ? `@media ${queries
+        .map((query) => convertToQuery(query, unit))
+        .join(" and ")}`
     : throwError();
 }
 
@@ -54,14 +56,14 @@ function parseParam(param) {
   return [sign, screenSize];
 }
 
-function convertToQuery(param) {
-  const [sign, screenSize] = parseParam(param);
+function convertToQuery(query, unit = "px") {
+  const [sign, screenSize] = parseParam(query);
   const hasEqualSign = sign.includes("=");
   const size = hasEqualSign
     ? breakpoints[screenSize]
     : breakpoints[screenSize] - 1;
   const widthCondition = sign.includes(">") ? "min-width" : "max-width";
-  return `(${widthCondition}: ${size}px)`;
+  return `(${widthCondition}: ${size}${unit})`;
 }
 
 export default cssinjsMedia;
