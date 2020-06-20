@@ -1,6 +1,6 @@
 import includeMedia, {
   setBreakPoints,
-  getBreakPoints
+  getBreakPoints,
 } from "./cssinjs-inlclude-media.js";
 
 describe("if param num is one", () => {
@@ -20,7 +20,7 @@ describe("get Breakpoints", () => {
       phone: 375,
       tablet: 768,
       desktop: 1024,
-      largeDesktop: 1440
+      largeDesktop: 1440,
     });
   });
 });
@@ -68,5 +68,19 @@ describe("check if breakpoint is changed", () => {
     expect(() => setBreakPoints({ smallDesktop: 1500 })).toThrowError(
       new Error("invalid breakpoint :(")
     );
+  });
+
+  describe("check if breakpoint's type is string", () => {
+    test("test for string breakpoint", () => {
+      setBreakPoints({ largeDesktop: "150rem" });
+      expect(includeMedia("<=largeDesktop")).toBe("@media (max-width: 150rem)");
+    });
+
+    test("test for string breakpoint", () => {
+      setBreakPoints({ largeDesktop: "calc(20 * 18px)" });
+      expect(includeMedia("<=largeDesktop")).toBe(
+        "@media (max-width: calc(20 * 18px))"
+      );
+    });
   });
 });
