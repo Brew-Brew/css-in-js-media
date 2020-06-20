@@ -35,11 +35,10 @@ function setBreakPoints(customizedBreakPoints) {
   breakpoints = { ...breakpoints, ...customizedBreakPoints };
 }
 
-function cssinjsMedia() {
-  const validatedQuery = Array.from(arguments).filter(checkValid);
-  const isValid = Array.from(arguments).length === validatedQuery.length;
-  return isValid
-    ? "@media " + validatedQuery.map(convertToQuery).join(" and ")
+function cssinjsMedia(query, betweenQuery) {
+  const queries = betweenQuery ? [query, betweenQuery] : [query];
+  return queries.every(checkValid)
+    ? `@media ${queries.map(convertToQuery).join(" and ")}`
     : throwError();
 }
 
