@@ -19,6 +19,7 @@ declare module "css-in-js-media" {
   export function getBreakPoints(): BreakPoints;
   export default function cssInJsMedia(
     firstQuery?: string,
-    secondQuery?: string
+    secondQuery?: string,
+    unit?: string
   ): string;
 }
