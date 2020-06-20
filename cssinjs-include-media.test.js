@@ -71,12 +71,12 @@ describe("check if breakpoint is changed", () => {
   });
 
   describe("check if breakpoint's type is string", () => {
-    test("test for string breakpoint", () => {
+    test("test for size of string", () => {
       setBreakPoints({ largeDesktop: "150rem" });
       expect(includeMedia("<=largeDesktop")).toBe("@media (max-width: 150rem)");
     });
 
-    test("test for string breakpoint", () => {
+    test("test for size of css function usage", () => {
       setBreakPoints({ largeDesktop: "calc(20 * 18px)" });
       expect(includeMedia("<=largeDesktop")).toBe(
         "@media (max-width: calc(20 * 18px))"
