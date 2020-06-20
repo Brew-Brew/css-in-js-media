@@ -56,8 +56,8 @@ function parseParam(param) {
   return [sign, screenSize];
 }
 
-function convertToQuery(query, unit = "px") {
-  const [sign, screenSize] = parseParam(query);
+function convertToQuery(param, unit = "px") {
+  const [sign, screenSize] = parseParam(param);
   const hasEqualSign = sign.includes("=");
   const size = hasEqualSign
     ? breakpoints[screenSize]
