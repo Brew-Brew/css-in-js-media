@@ -102,7 +102,7 @@ import { setBreakPoints } from "css-in-js-media";
 setBreakPoints({ desktop: 1440, largeDesktop: 1500 });
 
 // or string size
-setBreakPoints({ desktop: '140rem', largeDesktop: 'calc(30 * 50px)' });
+setBreakPoints({ desktop: "140rem", largeDesktop: "calc(30 * 50px)" });
 ```
 
 #### get breakpoints (optional)
@@ -129,7 +129,7 @@ getBreakPoints();
 
 ### :bug: Bug reporting
 
-[Issue](https://github.com/zx6658/css-in-js-media/issues)
+[Issue](https://github.com/Brew-Brew/css-in-js-media/issues)
 
 ### License
 
