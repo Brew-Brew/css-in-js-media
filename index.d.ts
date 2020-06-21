@@ -12,7 +12,7 @@ declare module "css-in-js-media" {
     | "largeDesktop";
 
   type BreakPoints = {
-    [key in BreakPoint]?: number;
+    [key in BreakPoint]?: number | string;
   };
 
   export function setBreakPoints(breakPoints: BreakPoints): void;
