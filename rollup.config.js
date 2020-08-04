@@ -1,3 +1,4 @@
+import { getBabelOutputPlugin } from "@rollup/plugin-babel";
 import minify from "rollup-plugin-babel-minify";
 
 const config = {
@@ -5,11 +6,11 @@ const config = {
   output: [
     {
       file: "dist/index.js",
-      format: "umd",
-      name: "css-in-js-media"
-    }
+      format: "esm",
+      name: "css-in-js-media",
+    },
   ],
-  plugins: [minify()]
+  plugins: [getBabelOutputPlugin({ presets: ["@babel/preset-env"] }), minify()],
 };
 
 export default config;
