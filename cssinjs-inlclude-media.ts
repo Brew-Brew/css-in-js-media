@@ -34,7 +34,7 @@ function checkValidBreakpoint(customizedBreakPoints): boolean {
   return keysOfCustomized.every((key) => keysOfOrigin.includes(key));
 }
 
-function setBreakPoints(customizedBreakPoints) {
+function setBreakPoints(customizedBreakPoints: BreakPoints): never | void {
   const isValidBreakPoints = checkValidBreakpoint(customizedBreakPoints);
 
   if (!isValidBreakPoints) {
@@ -44,7 +44,7 @@ function setBreakPoints(customizedBreakPoints) {
   breakpoints = { ...breakpoints, ...customizedBreakPoints };
 }
 
-function cssinjsMedia(query: string, betweenQuery: string) {
+function cssinjsMedia(query: string, betweenQuery: string): string | never {
   const queries = betweenQuery ? [query, betweenQuery] : [query];
   return queries.every(checkValid)
     ? `@media ${queries.map(convertToQuery).join(" and ")}`
