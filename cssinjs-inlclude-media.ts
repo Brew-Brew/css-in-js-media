@@ -1,3 +1,11 @@
+interface BreakPoints {
+  smallPhone: number;
+  phone: number;
+  tablet: number;
+  desktop: number;
+  largeDesktop: number;
+}
+
 let breakpoints = {
   smallPhone: 320,
   phone: 375,
@@ -5,21 +13,22 @@ let breakpoints = {
   desktop: 1024,
   largeDesktop: 1440,
 };
+
 const signRegex = /^[<=>]+/;
 
-function throwError() {
+function throwError(): never {
   throw "invalid media-query  :(";
 }
 
-function throwBreakPointError() {
+function throwBreakPointError(): never {
   throw "invalid breakpoint :(";
 }
 
-function getBreakPoints() {
+function getBreakPoints(): BreakPoints {
   return breakpoints;
 }
 
-function checkValidBreakpoint(customizedBreakPoints) {
+function checkValidBreakpoint(customizedBreakPoints): boolean {
   const keysOfOrigin = Object.keys(breakpoints);
   const keysOfCustomized = Object.keys(customizedBreakPoints);
   return keysOfCustomized.every((key) => keysOfOrigin.includes(key));
@@ -35,7 +44,7 @@ function setBreakPoints(customizedBreakPoints) {
   breakpoints = { ...breakpoints, ...customizedBreakPoints };
 }
 
-function cssinjsMedia(query, betweenQuery) {
+function cssinjsMedia(query: string, betweenQuery: string) {
   const queries = betweenQuery ? [query, betweenQuery] : [query];
   return queries.every(checkValid)
     ? `@media ${queries.map(convertToQuery).join(" and ")}`
@@ -48,13 +57,13 @@ function checkValid(param) {
   return checkResult;
 }
 
-function parseParam(param) {
+function parseParam(param: string) {
   const sign = param.match(signRegex) ? param.match(signRegex)[0].trim() : "";
   const screenSize = param.replace(signRegex, "").trim();
   return [sign, screenSize];
 }
 
-function convertToQuery(param) {
+function convertToQuery(param: string) {
   const [sign, screenSize] = parseParam(param);
   const hasEqualSign = sign.includes("=");
   const size = hasEqualSign

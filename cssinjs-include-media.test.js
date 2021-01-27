@@ -1,6 +1,6 @@
 import includeMedia, {
   setBreakPoints,
-  getBreakPoints
+  getBreakPoints,
 } from "./cssinjs-inlclude-media.js";
 
 describe("if param num is one", () => {
@@ -20,7 +20,7 @@ describe("get Breakpoints", () => {
       phone: 375,
       tablet: 768,
       desktop: 1024,
-      largeDesktop: 1440
+      largeDesktop: 1440,
     });
   });
 });
