@@ -1,7 +1,7 @@
 import includeMedia, {
   setBreakPoints,
-  getBreakPoints
-} from "./cssinjs-inlclude-media.js";
+  getBreakPoints,
+} from "./cssinjs-inlclude-media";
 
 describe("if param num is one", () => {
   test("check <phone", () => {
@@ -20,7 +20,7 @@ describe("get Breakpoints", () => {
       phone: 375,
       tablet: 768,
       desktop: 1024,
-      largeDesktop: 1440
+      largeDesktop: 1440,
     });
   });
 });
