@@ -56,7 +56,7 @@ function setBreakPoints(customizedBreakPoints: BreakPoints): never | void {
  * @param query
  * @param betweenQuery
  */
-function cssinjsMedia(query: string, betweenQuery: string): string | never {
+function cssinjsMedia(query: string, betweenQuery?: string): string | never {
   const queries = betweenQuery ? [query, betweenQuery] : [query];
   return queries.every(checkValid)
     ? `@media ${queries.map(convertToQuery).join(" and ")}`

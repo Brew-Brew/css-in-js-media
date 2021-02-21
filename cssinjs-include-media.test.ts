@@ -1,7 +1,7 @@
 import includeMedia, {
   setBreakPoints,
   getBreakPoints,
-} from "./cssinjs-inlclude-media.ts";
+} from "./cssinjs-inlclude-media";
 
 describe("if param num is one", () => {
   test("check <phone", () => {
