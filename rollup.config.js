@@ -3,7 +3,7 @@ import minify from "rollup-plugin-babel-minify";
 import typescript from "rollup-plugin-typescript2";
 
 const config = {
-  input: "./cssinjs-inlclude-media.js",
+  input: "./cssinjs-inlclude-media.ts",
   output: [
     {
       file: "dist/index.js",

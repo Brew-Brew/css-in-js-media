@@ -24,6 +24,9 @@ function throwBreakPointError(): never {
   throw "invalid breakpoint :(";
 }
 
+/**
+ * get breakpoint list of css-in-js-media
+ */
 function getBreakPoints(): BreakPoints {
   return breakpoints;
 }
@@ -34,6 +37,10 @@ function checkValidBreakpoint(customizedBreakPoints): boolean {
   return keysOfCustomized.every((key) => keysOfOrigin.includes(key));
 }
 
+/**
+ * set break points of css-in-js-media library with custom param
+ * @param customizedBreakPoints customized breakpoint param
+ */
 function setBreakPoints(customizedBreakPoints: BreakPoints): never | void {
   const isValidBreakPoints = checkValidBreakpoint(customizedBreakPoints);
 
@@ -44,6 +51,11 @@ function setBreakPoints(customizedBreakPoints: BreakPoints): never | void {
   breakpoints = { ...breakpoints, ...customizedBreakPoints };
 }
 
+/**
+ * use css in js media (ex: includeMedia(">=phone", "<tablet"))
+ * @param query
+ * @param betweenQuery
+ */
 function cssinjsMedia(query: string, betweenQuery: string): string | never {
   const queries = betweenQuery ? [query, betweenQuery] : [query];
   return queries.every(checkValid)
