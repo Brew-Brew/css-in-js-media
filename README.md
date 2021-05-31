@@ -6,9 +6,9 @@ when you style with css-in-js (emotion, styled-component) you can perfectly and 
 
 If you think this library is helpful, Support by give :star:
 
-**Migrate to TS at version V2 :tada:**
+**Migrate to Typescript at version V2 :tada:**
 
-**introduced at**
+**Introduced at**
 
 - https://styled-components.com/ecosystem helpers section
 - https://github.com/emotion-js/emotion#ecosystem
