@@ -99,6 +99,8 @@ const exampleClass = styled.h1`
 
 #### set flexible breakpoints (optional)
 
+⚠️ You should set this in entry point file (root file) 
+
 ```javascript
 import { setBreakPoints } from "css-in-js-media";
 setBreakPoints({ desktop: 1440, largeDesktop: 1500 });
