@@ -19,6 +19,6 @@ declare function setBreakPoints(customizedBreakPoints: BreakPoints): never | voi
  * @param query
  * @param betweenQuery
  */
-declare function cssinjsMedia(query: string, betweenQuery: string): string | never;
+declare function cssinjsMedia(query: string, betweenQuery?: string): string | never;
 export default cssinjsMedia;
 export { getBreakPoints, setBreakPoints };
