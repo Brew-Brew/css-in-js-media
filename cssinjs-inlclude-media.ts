@@ -75,12 +75,21 @@ function parseParam(param: string) {
   return [sign, screenSize];
 }
 
+function calculateSize(sign: string, screenSize: string) {
+  if (sign.includes("=")) {
+    return breakpoints[screenSize];
+  }
+
+  if (sign.includes(">")) {
+    return breakpoints[screenSize] + 1;
+  }
+
+  return breakpoints[screenSize] - 1;
+}
+
 function convertToQuery(param: string) {
   const [sign, screenSize] = parseParam(param);
-  const hasEqualSign = sign.includes("=");
-  const size = hasEqualSign
-    ? breakpoints[screenSize]
-    : breakpoints[screenSize] - 1;
+  const size = calculateSize(sign, screenSize);
   const unit = typeof size === "number" ? "px" : "";
   const widthCondition = sign.includes(">") ? "min-width" : "max-width";
   return `(${widthCondition}: ${size}${unit})`;
